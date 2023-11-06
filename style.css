@@ -9,21 +9,26 @@ body {
   }
   
   .page {
-    width: 600px;
     margin: 0 auto;
     padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
   
     margin-bottom: 15px;
+    width: 1005px;
   }
   
   ul {
     display: flex;
+    gap: 48px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -42,6 +47,15 @@ body {
     font-weight: bold;
     opacity: 1;
   }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1005px;
+  }	
   
   h1,
   ul {
@@ -74,14 +88,20 @@ body {
   button {
     color: white;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   
     background: #69B99D;
     border: 0;
-    padding: 0 50px 30px;
+    padding: 14px 32px 15px 32px;;
   
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   
     border-radius: 4px;
   
@@ -106,7 +126,8 @@ body {
   }
   
   #balls {
-      bottom: 0;
-      right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
   }
   
